@@ -79,11 +79,11 @@ clf2.fit(X, Y)
 prediction2 = clf2.predict(df)
 
 def pred(x):
-    if 50 <x <70 :
+    if 50 < x < 70:
         return " Standard:frowning:"
-    elif x<=50 :
+    elif x <= 50:
         return "Preferred :sparkles:"
-    elif x>=70 :
+    elif x >= 70:
         return "Substandard :frowning:"
 
 
