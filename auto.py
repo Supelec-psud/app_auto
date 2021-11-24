@@ -9,7 +9,7 @@ st.write("""
 by Tae-Heun KIM
 """)
 
-img = Image.open('C:/Users/taehe/PycharmProjects/candyapp/images.png')
+img = Image.open('images.png')
 
 st.image(img)
 st.sidebar.header('User Input Parameters')
@@ -60,7 +60,7 @@ df = user_input_features()
 st.subheader('User Input parameters')
 st.write(df)
 
-data = pd.read_csv("C:/Users/taehe/PycharmProjects/candyapp/app_data.csv")
+data = pd.read_csv("https://raw.githubusercontent.com/Supelec-psud/app_auto/main/app_data.csv")
 
 
 X=data.drop(['JOB','KIDSDRIV','HOMEKIDS','CLM_FREQ','AGE','TARGET_AMT','TARGET_FLAG','YOJ','RED_CAR','TIF','CAR_AGE','CAR_TYPE','EDUCATION','HOME_VAL','INDEX','BLUEBOOK','OLDCLAIM','log_TARGET_AMT','log_INCOME','log_BLUEBOOK','log_OLDCLAIM'],axis=1)
